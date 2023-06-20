@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/underline"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Time"
+            android:textSize="12dp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:textSize="15dp"
+            android:text="Username"
+            app:layout_constraintStart_toEndOf="@+id/image_profile2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_profile2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius_bottom_left="10dp"
+            app:riv_corner_radius_bottom_right="10dp"
+            app:riv_corner_radius_top_left="10dp"
+            app:riv_corner_radius_top_right="10dp"
+            app:riv_oval="false" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView_activityTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_normal"
+        android:textColor="@color/white"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7dp"
+        android:text="#ACTIVITY"/>
+
+    <TextView
+        android:id="@+id/textView_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="15dp"
+        android:lineSpacingExtra="5dp"
+        android:text="Contents" />
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/moment_test" />
+
+    <LinearLayout
+        android:id="@+id/activity_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="24dp">
+        <ImageView
+            android:id="@+id/activity_menu_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/menu"/>
+        <ImageView
+            android:id="@+id/activity_comment_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/comment"/>
+        <TextView
+            android:id="@+id/activity_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="15dp"
+            android:layout_marginRight="30dp"
+            android:text="0" />
+        <ImageView
+            android:id="@+id/activity_group_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/group"/>
+        <TextView
+            android:id="@+id/activity_group_num"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="15dp"
+            android:text="0" />
+        <TextView
+            android:id="@+id/activity_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_delete"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="DELETE"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/moment_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="24dp">
+        <ImageView
+            android:id="@+id/moment_like_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/heart"/>
+        <TextView
+            android:id="@+id/moment_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/dark_grey"
+            android:textSize="15dp"
+            android:text="0" />
+        <ImageView
+            android:id="@+id/moment_comment_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/comment"/>
+        <TextView
+            android:id="@+id/moment_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:text="0" />
+        <TextView
+            android:id="@+id/moment_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_delete"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="DELETE"/>
+    </LinearLayout>
+
+</LinearLayout>

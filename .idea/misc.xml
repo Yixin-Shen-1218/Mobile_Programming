@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/drawable/underline.xml" value="0.2985" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/activity_activity_post.xml" value="0.33" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/activity_moments_post.xml" value="0.5" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/activity_post.xml" value="0.25" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/activity_post_detail.xml" value="0.442051282051282" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/activity_post_detial.xml" value="0.33" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/activity_register.xml" value="0.29635416666666664" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/fragment_discover.xml" value="0.33" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/post_item.xml" value="0.44895833333333335" />
+        <entry key="..\:/00/unimelb/2022 S2/Mobile/new/Mobile_as2/app/src/main/res/layout/user_item.xml" value="0.24322916666666666" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable-v24/chat_nav_selector.xml" value="0.154" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable-v24/contracts_nav_selector.xml" value="0.236" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable-v24/match_nav_selector.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable-v24/profile_nav_selector.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable-v24/surfing_board_nav_selector.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/btn_normal.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/chat_nav_selector.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/chat_shape.xml" value="0.197" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/search_view_bg.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/sign_in_btn.xml" value="0.1515" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/sign_in_btn_normal.xml" value="0.1355" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/sign_in_btn_pressed.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/drawable/sign_in_btn_selector.xml" value="0.1355" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout-v23/activity_welcome.xml" value="0.12664640324214793" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_activity_post.xml" value="0.17274569402228976" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_add_friend.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_chat_window.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_edit_match_profile.xml" value="0.2861111111111111" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_friend_request.xml" value="0.14666666666666667" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_friend_search_result.xml" value="0.24094202898550723" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_home_page.xml" value="0.2421875" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_loading.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_moments_post.xml" value="0.17274569402228976" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_post_comment.xml" value="0.17274569402228976" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_post_detail.xml" value="0.25769927536231885" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_profile.xml" value="0.17274569402228976" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_profile_edit.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_register.xml" value="0.23193916349809887" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_step.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_uilogin.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/activity_welcome.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/base_title_bar.xml" value="0.17274569402228976" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/chat_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/contact_item.xml" value="0.4083333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_chats.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_contacts.xml" value="0.1" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_discover.xml" value="0.18432971014492755" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_match.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_search.xml" value="0.19293478260869565" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/fragment_zero_match.xml" value="0.17274569402228976" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/left_chat.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/left_chat_img.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/list_item.xml" value="0.18478260869565216" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/post_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/request_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/right_chat.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/right_chat_img.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/search_result_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/step_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/tag_layout.xml" value="0.4466666666666667" />
+        <entry key="..\:/Mobile_as2/app/src/main/res/layout/user_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Lenovo/Desktop/test/dev_chat/app/src/main/res/layout/left_chat.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/drawable-anydpi/button_background.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable-v24/contracts_nav_selector.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable-v24/match_nav_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/profile_nav_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/surfing_board_nav_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/btn_normal.xml" value="0.137" />
+        <entry key="app/src/main/res/drawable/linear_layout_demo.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/list_view_demo.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/relative_layout_demo.xml" value="0.1295" />
+        <entry key="app/src/main/res/layout/activity_chat_window.xml" value="0.11621621621621622" />
+        <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.20101351351351351" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.18575286865234375" />
+        <entry key="app/src/main/res/layout/base_title_bar.xml" value="0.1730804443359375" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_contacts.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_discover.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_match.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.13716216216216215" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.13716216216216215" />
+        <entry key="app/src/main/res/layout/left_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/post_activity_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/post_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/post_moment_item.xml" value="0.15945945945945947" />
+        <entry key="app/src/main/res/layout/profile.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/tag_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/user_item.xml" value="0.13716216216216215" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.13716216216216215" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">title</string>
+    <string name="post">POST</string>
+    <string name="edit">EDIT</string>
+    <string name="unisea">UniSea</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="smaller"><![CDATA[<]]></string>
+</resources>

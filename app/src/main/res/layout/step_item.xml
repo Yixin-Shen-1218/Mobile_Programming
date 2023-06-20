@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="10"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="70dp"
+        android:src="@drawable/chat1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius_bottom_left="15dp"
+        app:riv_corner_radius_bottom_right="15dp"
+        app:riv_corner_radius_top_left="15dp"
+        app:riv_corner_radius_top_right="15dp"
+        app:riv_oval="false" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+
+        android:text="Solace"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/step_num"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="12000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <View
+    android:id="@+id/bottom_line"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/dark_grey"
+    app:layout_constraintTop_toBottomOf="@+id/avatar"
+    />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

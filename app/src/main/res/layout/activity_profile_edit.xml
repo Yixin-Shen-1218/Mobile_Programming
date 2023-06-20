@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    tools:context=".ProfileEditActivity">
+
+    <!-- title bar -->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/BackBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/angle_left" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/SAVE_TEXT"
+            android:textSize="20sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textColor="@color/primary_blue"/>
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--      Avatar      -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/chat1"
+                    app:riv_corner_radius_bottom_left="60dp"
+                    app:riv_corner_radius_bottom_right="60dp"
+                    app:riv_corner_radius_top_left="60dp"
+                    app:riv_corner_radius_top_right="60dp"
+                    app:riv_oval="false" />
+
+                <TextView
+                    android:id="@+id/avatar_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Edit Avatar"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      Username      -->
+            <RelativeLayout
+                android:id="@+id/username_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/username_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:ems="8"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      DOB      -->
+            <RelativeLayout
+                android:id="@+id/DOB_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/DOB_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:hint="set your DOB"
+                    android:ems="8"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--      Gender      -->
+            <RelativeLayout
+                android:id="@+id/Gender_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/Gender_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:ems="8"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/save_profile"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      University      -->
+            <RelativeLayout
+                android:id="@+id/University_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/University_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--      Degree      -->
+
+
+            <!--      Height      -->
+            <RelativeLayout
+                android:id="@+id/Height_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Height"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Height_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/cm"
+                    android:ems="3"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="90dp"
+                    android:maxLength="3"
+                    android:text="cm"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--      About      -->
+            <RelativeLayout
+                android:id="@+id/About_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About me"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/About_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:ems="9"
+                    android:gravity="top"
+                    android:maxLength="45"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      Tag      -->
+            <RelativeLayout
+                android:id="@+id/Tag_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="Tags"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Tag1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="1dp"
+                    android:layout_toStartOf="@+id/Tag2_text"
+                    android:ems="7"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="15"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Tag2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:ems="7"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Tag3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Tag1_text"
+                    android:layout_alignStart="@+id/Tag1_text"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="14dp"
+                    android:ems="7"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Tag4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Tag2_text"
+                    android:layout_alignStart="@+id/Tag2_text"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="14dp"
+                    android:ems="7"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      Match Edit      -->
+            <RelativeLayout
+                android:id="@+id/match_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:paddingHorizontal="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_grey"
+                    android:text="Edit Match Perference"/>
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/angle_right" />
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

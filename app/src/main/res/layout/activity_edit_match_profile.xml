@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical"
+    tools:context=".EditMatchProfileActivity">
+
+    <!-- title bar -->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/BackBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/angle_left" />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo" />
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--      Age      -->
+            <RelativeLayout
+                android:id="@+id/Age_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Age"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Age_1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/Age_Line"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Age_1_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:imeOptions="actionDone"
+                        android:maxLength="2"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:id="@+id/Age_Line"
+                    android:layout_width="30dp"
+                    android:layout_height="1.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/Age_2"
+                    android:background="@color/dark_grey" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Age_2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    app:hintAnimationEnabled="false"
+                    android:layout_centerVertical="true"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Age_2_Input"
+                        android:layout_width="match_parent"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <!--      Height      -->
+            <RelativeLayout
+                android:id="@+id/Height_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Height"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Height_1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/Height_Line"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Height_1_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:imeOptions="actionDone"
+                        android:maxLength="3"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:id="@+id/Height_Line"
+                    android:layout_width="30dp"
+                    android:layout_height="1.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/Height_2"
+                    android:background="@color/dark_grey" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Height_2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_toStartOf="@+id/cm"
+                    android:layout_marginEnd="5dp"
+                    app:hintAnimationEnabled="false"
+                    android:layout_centerVertical="true"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Height_2_Input"
+                        android:layout_width="match_parent"
+                        android:lines="1"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:maxLength="3"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="cm"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      Gender      -->
+            <RelativeLayout
+                android:id="@+id/Gender_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Gender"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/venus_checkbox"
+                    android:src="@drawable/venus">
+
+                </ImageView>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/venus_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/mars_img"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25">
+
+                </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+                <ImageView
+                    android:id="@+id/mars_img"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/mars_checkbox"
+                    android:src="@drawable/mars">
+
+                </ImageView>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/mars_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/non_bi_img"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25">
+
+                </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+                <ImageView
+                    android:id="@+id/non_bi_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/non_bi_checkbox"
+                    android:src="@drawable/non_binary">
+
+                </ImageView>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/non_bi_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25">
+
+                </com.google.android.material.checkbox.MaterialCheckBox>
+
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      Distance      -->
+            <RelativeLayout
+                android:id="@+id/Distance_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Distance"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/smaller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/Distance"
+                    android:text="@string/smaller"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="40sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Distance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/km"
+                    app:hintAnimationEnabled="false"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Distance_Input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:imeOptions="actionDone"
+                        android:maxLength="4"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="km"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--      Save Button      -->
+            <RelativeLayout
+                android:id="@+id/Save_Button_Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp">
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/btn_normal"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="SAVE"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

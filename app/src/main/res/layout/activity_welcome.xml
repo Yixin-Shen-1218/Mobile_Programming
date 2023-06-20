@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3033F85"
+    tools:context=".WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_welcome"
+        android:layout_width="175dp"
+        android:layout_height="149dp"
+        android:src="@drawable/logo_loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.30" />
+
+    <TextView
+        android:id="@+id/Welcome_welcome"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/welcome_to"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_welcome" />
+
+    <TextView
+        android:id="@+id/UniseaText_welcome"
+        android:layout_width="168dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/unisea"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome_welcome" />
+
+    <TextView
+        android:id="@+id/intro_welcome"
+        android:layout_width="285dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:text=" Chat, Date &amp; Meet new friends from campus "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UniseaText_welcome" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="330dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/sign_in_btn"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3033F85"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro_welcome" />
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/light_grey"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.166" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "574025919054",
+    "firebase_url": "https://assignment2-daac3-default-rtdb.firebaseio.com",
+    "project_id": "assignment2-daac3",
+    "storage_bucket": "assignment2-daac3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574025919054:android:05c8da4dd8b325f003711f",
+        "android_client_info": {
+          "package_name": "com.example.UNISEA"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574025919054-m4qhh8mppdmk62n851o7r413gts0dvk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Y1ZxYbjzVkU_iLRcXFWOsOAxt1Wro7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574025919054-m4qhh8mppdmk62n851o7r413gts0dvk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

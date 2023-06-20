@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.UNISEA">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/unisea"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UNISEA.NoActionBar">
+        <activity
+            android:name=".OtherUserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MySinglePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatWindowActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditMatchProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MomentsPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendSearchResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddFriendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UILoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" /> <!-- Loadpage First -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
